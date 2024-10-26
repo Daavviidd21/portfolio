@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="x-icon" href="" />
+    <title>Dave's Portfolio</title>
+    <link href="src/CSSandJS/style.css" rel="stylesheet" />
+    <link href="src/CSSandJS/mediaquery.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script
+      src="https://kit.fontawesome.com/898068a3a6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--HEADER-->
+    <header class="header">
+      <!--NAVBAR-->
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#about-me">About Me</a></li>
+          <li><a class="main-nav-link" href="#tech-stack">Tech Stack</a></li>
+          <li><a class="main-nav-link" href="#my-project">My Projects</a></li>
+          <li><a class="main-nav-link" href="#my-service">My Service</a></li>
+          <li><a class="main-nav-link" href="#contact-me">Contact Me</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <i class="fa-solid fa-bars icon-mobile-nav" name="menu-outline"></i>
+        <i class="fa-solid fa-x icon-mobile-nav" name="close-outline"></i>
+      </button>
+    </header>
+    <hr />
+    <!--END HEADER-->
+
+    <main>
+      <!--HERO-->
+
+      <section
+        class="section-hero"
+        data-aos="fade-right"
+        data-aos-duration="1500"
+        id="hero"
+      >
+        <div class="hero">
+          <div class="hero-image"></div>
+          <div class="hero-text-box">
+            <h1 class="primary-heading">I'm Dave</h1>
+            <h3 class="sub-heading">Aspiring Web Developer</h3>
+            <p class="description">Your Vision, My Code</p>
+          </div>
+        </div>
+      </section>
+
+      <!--END HERO-->
+
+      <!--ABOUT ME-->
+
+      <sectio
+        class="section-about-me"
+        data-aos="fade-right"
+        data-aos-duration="1500"
+        id="about-me"
+      >
+        <div class="about container" data-aos="zoom-in">
+          <h1 class="title-text">About Me</h1>
+          <hr />
+          <p class="description container">
+            Hi, I'm <b>DAVE B MERINO</b> I hold a Bachelor Degree in
+            <b>Bacholer of Sceince In Information Technology</b>, someone who’s
+            always been curious about the world and eager to learn new things.
+            I’m particularly passionate about learning anything related to my
+            field in Information Technology. I’ve worked as a Technical Support
+            Specialist for 3 years and as a Support Engineer for a few months.
+            Now, I’m transitioning my skills into web design/development.
+            Outside of work, I love spending my time riding motorcycles and
+            playing video games. A fun fact about me is that I used to be able
+            to spend 24 hours straight playing computer games!
+          </p>
+          <div class="row">
+            <div
+              class="about-col-1"
+              data-aos="flip-right"
+              data-aos-duration="1000"
+            >
+              <img src="src/Images/FB_IMG_1681592145456 (2).jpg" />
+            </div>
+
+            <div class="about-col-2">
+              <!--Active link tab (section where you can click links)-->
+              <div class="tab-titles">
+                <div class="tab-titles tab-query">
+                  <p class="tab-links active-link" onclick="opentab('skills')">
+                    Skills
+                  </p>
+                  <p class="tab-links" onclick="opentab('experience')">
+                    Experience
+                  </p>
+                  <p class="tab-links" onclick="opentab('education')">
+                    Education
+                  </p>
+                </div>
+              </div>
+              <!--Active links end here -->
+              <!--Tab contebts -->
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li>
+                    <span>Web Dev(front end)</span><br />
+                    <p class="skill-content">HTML,CSS,JS,TAILWIND,ReactJS,</p>
+                  </li>
+                  <li>
+                    <span>Data Analytics</span><br />
+                    <p class="skill-content">ETL,data mining,</p>
+                    <br />
+                    <p class="skill-content">cleaning, and visualizations.</p>
+                  </li>
+                  <li>
+                    <span>Computer Hardware/Software</span><br />
+                    <p class="skill-content">
+                      Basic troubleshooting and maintenance
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li>
+                    <span>Part-Time</span><br />
+                    <p class="skill-content">WEBSITE DESIGNER/DEVELOPER</p>
+                  </li>
+                  <li>
+                    <span>March 2024 - Present</span><br />
+                    <p class="skill-content">TECHNICAL SUPPORT ENGINEER</p>
+                  </li>
+                  <li>
+                    <span>October 2020 - January 2024</span><br />
+                    <p class="skill-content">TECHNICAL SUPPORT ANALYST</p>
+                  </li>
+                  <li>
+                    <span>July 2019 - January 2020</span><br />
+                    <p class="skill-content">IT ASSISTANT</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li>
+                    <span>Bachelor of Science in Information Technology</span
+                    ><br />
+                    <p class="skill-content">University of Rizal System</p>
+                  </li>
+                  <li>
+                    <span>Data Analytics</span><br />
+                    <p class="skill-content">Refocus Digital Academy</p>
+                  </li>
+                </ul>
+              </div>
+              <!--tab contents END here -->
+            </div>
+          </div>
+          <div class="social-icons">
+            <a
+              href="https://www.facebook.com/daavviidd21/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a
+              href="https://instagram.com/daveedavidd?"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://x.com/davedavid2021?"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-square-twitter"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/dave-merino-81bb59186/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </sectio>
+
+      <!--End About Me-->
+
+      <!--TECH STACK -->
+
+      <section
+        class="section-tech-stack block"
+        data-aos="fade-right"
+        data-aos-duration="1500"
+        id="tech-stack"
+      >
+        <div class="container tech-stack block">
+          <h1 class="title-text">Tech Stack</h1>
+          <hr />
+
+          <!--FRONT END WEB-->
+          <div class="stack-margin">
+            <h3 class="tech-title">
+              <i class="fa-solid fa-code"></i>Web Front End
+            </h3>
+            <div class="stack">
+              <div class="stack-wrap">
+                <i class="fa-brands fa-html5"></i>
+                <p class="stack-name">HTML5</p>
+              </div>
+              <div class="stack-wrap">
+                <i class="fa-brands fa-css3-alt"></i>
+                <p class="stack-name">CSS3</p>
+              </div>
+              <div class="stack-wrap">
+                <i class="fa-brands fa-js"></i>
+                <p class="stack-name">JS</p>
+              </div>
+              <div class="stack-wrap">
+                <i class="fa-brands fa-react"></i>
+                <p class="stack-name">ReactJS</p>
+              </div>
+              <div class="stack-wrap">
+                <i class="fa-brands fa-shopify"></i>
+                <p class="stack-name">Shopify</p>
+              </div>
+            </div>
+          </div>
+
+          <!--DATA ANALYTICS-->
+          <div class="stack-margin">
+            <h3 class="tech-title">
+              <i class="fa-solid fa-database"></i>Data Analytics
+            </h3>
+            <div class="stack">
+              <div class="stack-wrap">
+                <i class="fa-regular fa-file-excel"></i>
+                <p class="stack-name">EXCEL</p>
+              </div>
+              <div class="stack-wrap">
+                <i class="fa-solid fa-chart-simple"></i>
+                <p class="stack-name">POWER BI</p>
+              </div>
+              <div class="stack-wrap">
+                <i class="fa-solid fa-database"></i>
+                <p class="stack-name">SQL</p>
+              </div>
+            </div>
+          </div>
+
+          <!--OTHERS-->
+          <div class="stack-margin">
+            <h3 class="tech-title"><i class="fa-solid fa-gear"></i>Others</h3>
+            <div class="stack">
+              <div class="stack-wrap">
+                <i class="fa-brands fa-npm"></i>
+                <p class="stack-name">NPM</p>
+              </div>
+              <div class="stack-wrap">
+                <i class="fa-brands fa-github"></i>
+                <p class="stack-name">GItHUB</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---END TECH STACK-->
+
+      <!--MY PROJECT-->
+      <section class="" data-aos="fade-right" data-aos-duration="1500">
+        <div class="container my-projects" id="my-project">
+          <h1 class="title-text">My Project</h1>
+          <hr />
+          <div class="projects">
+            <div class="project">
+              <div data-aos="flip-right" data-aos-duration="1000">
+                <img src="src/Images/eskinaglomain.png" alt="Project" />
+              </div>
+              <div class="layer">
+                <p class="read-more">See Demo</p>
+                <a href="https://eskinagloria.netlify.app/"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+              <h3 class="project-title">Web Developement</h3>
+              <p class="list-description2">
+                This is a sample project that showcase my knowledge on web
+                development, using HTML, CSS and JS.
+              </p>
+            </div>
+            <div class="project">
+              <div data-aos="flip-right" data-aos-duration="1000">
+                <img src="src/Images/shopifymain.png" alt="Project" />
+              </div>
+              <div class="layer">
+                <p class="read-more">See Demo</p>
+                <a href=""><i class="fa-solid fa-link"></i></a>
+              </div>
+              <h3 class="project-title">Web Developement (shopify)</h3>
+              <p class="list-description2">
+                This is a sample project that showcase my knowledge in Shopify,
+                the them and adding liquid file.
+              </p>
+            </div>
+            <div class="project">
+              <div data-aos="flip-right" data-aos-duration="1000">
+                <img src="src/Images/floppybird.png" alt="Project" />
+              </div>
+              <div class="layer">
+                <p class="read-more">See Demo</p>
+                <a href="https://eskinagloria.netlify.app"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+              <h3 class="project-title">JavaScript</h3>
+              <p class="list-description2">
+                This is a sample project that showcase my knowledge on
+                JavaScript, where I created a webapp game.
+              </p>
+            </div>
+            <div class="project">
+              <div data-aos="flip-right" data-aos-duration="1000">
+                <img src="src/Images/apifetch.png" alt="Project" />
+              </div>
+              <div class="layer">
+                <p class="read-more">See Demo</p>
+                <a href="comparemovierating/index.html"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+              <h3 class="project-title">Web App(Fecthing Data)</h3>
+              <p class="list-description2">
+                This is a sample project that showcase my knowledge on API use
+                to fecth information using API
+              </p>
+            </div>
+            <div class="project">
+              <div data-aos="flip-right" data-aos-duration="1000">
+                <img src="src/Images/pbi4.JPG" alt="Project" />
+              </div>
+              <div class="layer">
+                <p class="read-more">See Demo</p>
+                <a href="comparemovierating/index.html"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+              <h3 class="project-title">Power BI</h3>
+              <p class="list-description2">
+                This is a sample project demonstrate my skills in data
+                visualizations using PowerBI.
+              </p>
+            </div>
+            <div class="project">
+              <div data-aos="flip-right" data-aos-duration="1000">
+                <img src="src/Images/Excelpic2.png" alt="Project" />
+              </div>
+              <div class="layer">
+                <p class="read-more">See Demo</p>
+                <a href=""><i class="fa-solid fa-link"></i></a>
+              </div>
+              <h3 class="project-title">Data Analytics</h3>
+              <p class="list-description2">
+                This project is a data analytics project showing my skills in
+                excel VLook Up, Charts and more for data visualizations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!---END MY PROJECTS-->
+
+      <!---MY SERVICE-->
+      <section
+        class="section-my-service"
+        data-aos="fade-right"
+        data-aos-duration="1500"
+        id="my-service"
+      >
+        <div class="container my-service">
+          <h1 class="title-text">My Service</h1>
+          <hr />
+
+          <div class="service-list">
+            <div class="service">
+              <div class="icon">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <h3 class="service-title">Data Analyst</h3>
+              <p class="list-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusantium cupiditate assumenda magnam aperiam maxime quae
+                consectetur soluta, nobis quas natus adipisci error hic ab est
+                rerum harum dolor qui. Corporis.
+              </p>
+              <div>
+                <a href="daproject.html">Learn more</a>
+              </div>
+            </div>
+            <div class="service">
+              <div class="icon">
+                <i class="fa-solid fa-microchip"></i>
+              </div>
+              <h3 class="service-title">Technical Support</h3>
+              <p class="list-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusantium cupiditate assumenda magnam aperiam maxime quae
+                consectetur soluta, nobis quas natus adipisci error hic ab est
+                rerum harum dolor qui. Corporis.
+              </p>
+              <div>
+                <a href="techpage.html">Learn more</a>
+              </div>
+            </div>
+            <div class="service">
+              <div class="icon">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <h3 class="service-title">Web Developement</h3>
+              <p class="list-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusantium cupiditate assumenda magnam aperiam maxime quae
+                consectetur soluta, nobis quas natus adipisci error hic ab est
+                rerum harum dolor qui. Corporis.
+              </p>
+              <div>
+                <a href="webproject.html">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!---END MY SERVICE-->
+
+      <!--CERTIFICATE-->
+      <section
+        class="section-certificate"
+        data-aos="fade-right"
+        data-aos-duration="1500"
+        id="certificates"
+      >
+        <div class="container cetificates">
+          <h1 class="certificates-title">Certificates</h1>
+          <hr />
+
+          <div class="certificate">
+            <div
+              class="cert-right"
+              data-aos="flip-right"
+              data-aos-duration="1000"
+            >
+              <img src="src/Images/cert1pic.png" alt="Cert" />
+            </div>
+            <div
+              class="cert-left"
+              data-aos="flip-right"
+              data-aos-duration="1000"
+            >
+              <img src="src/Images/cert2pic.png" alt="Cert" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--END CERTIFICATE-->
+
+      <!--CONTACT ME-->
+      <section
+        class="section-contact-me"
+        data-aos="fade-right"
+        data-aos-duration="1500"
+        id="contact-me"
+      >
+        <div class="container contact">
+          <h1 class="certificates-title">Contact Me</h1>
+          <hr />
+
+          <div class="contact-wrapper">
+            <form class="contact-form" name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea name="message" rows="6" placeholder="Your Message">
+              </textarea>
+
+              <button type="submit" class="btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </section>
+      <div class="btnUp">
+        <i class="fa-solid fa-arrow-up" id="up"></i>
+      </div>
+      <!--END CONTACT ME-->
+    </main>
+
+    <footer class="footer" data-aos="zoom-in" data-aos-duration="1500">
+      <div class="footer-container">
+        <div class="upper-footer">
+          <div class="upper-footer-flex">
+            <h3 class="footer-description">My Contact</h3>
+            <div class="info-wrapper">
+              <i
+                class="fa-sharp fa-solid fa-paper-plane"
+                aria-hidden="true"
+              ></i>
+              <h4 class="contact-info">daavviidd21@gmail.com</h4>
+            </div>
+            <div class="info-wrapper">
+              <i class="fa-solid fa-mobile-screen" aria-hidden="true"></i>
+              <h4 class="contact-info">09953458131</h4>
+            </div>
+          </div>
+          <div class="upper-footer-flex">
+            <h3 class="footer-description">My Socials</h3>
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/daavviidd21/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="https://instagram.com/daveedavidd?"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://x.com/davedavid2021?"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-square-twitter"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/dave-merino-81bb59186/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="upper-footer-flex">
+            <h3 class="footer-description">Download CV</h3>
+            <a href="" download="" class="icon-flex">
+              <i class="fa-solid fa-download download-cv"></i
+            ></a>
+          </div>
+        </div>
+        <div class="lower-footer">
+          <p>Copyright © Dave Merino</p>
+        </div>
+      </div>
+    </footer>
+    <script src="src/CSSandJS/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/CSSandJS/style.css" />
+    <link rel="stylesheet" href="src/CSSandJS/mediaquery.css" />
+    <link rel="stylesheet" href="src/CSSandJS/subpage.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script
+      src="https://kit.fontawesome.com/898068a3a6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--HEADER-->
+    <header class="header">
+      <!--NAVBAR-->
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#">Home</a></li>
+          <li><a class="main-nav-link" href="#Projects">My Projects</a></li>
+          <li><a class="main-nav-link" href="#Contact">Contact Me</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <i class="fa-solid fa-bars icon-mobile-nav" name="menu-outline"></i>
+        <i class="fa-solid fa-x icon-mobile-nav" name="close-outline"></i>
+      </button>
+    </header>
+    <hr />
+    <!--END HEADER-->
+    <main>
+      <!--HERO-->
+
+      <section class=""  
+        data-aos="fade-right"
+        data-aos-duration="1500"
+        id="hero"
+      >
+        <div class="hero container">
+          <div class="">
+            <div class="subpage-banner">
+              <h1 class="primary-heading-subpage">Technical Support</h1>
+              <h3 class="description-subpage">
+                I'ved worked as a technical support for 4 years
+              </h3>
+              <hr class="sub-page-divider" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--END HERO-->
+
+      <!--Technical Support Service-->
+      <section class="subpage-service" data-aos="fade-right" data-aos-duration="1500" id="Projects">
+        <!-- Services section content -->
+        <div class="subpage-service" id="Projects">
+          <div class="row">
+            <div class="column img-box" data-aos="flip-right" data-aos-duration="1000">
+              <img src="src/Images/image3.png" alt="Technical photo" />
+            </div>
+            <div class="column text-column">
+              <h3>TECHNICAL SUPPORT ENGINEER</h3>
+              <p>
+                I'm a technical support engineer for five months fo a SaaS
+                company were they offer an E-Commerce solution for business
+                across the globe
+              </p>
+
+              <ul class="task-list">
+                <li>Intalling widgets/plug-ins to the website</li>
+                <li>Customize HTML, CSS and Javascript</li>
+                <li>Customization of the plug ins</li>
+                <li>
+                  Customization of CMS (shopify, big commerce, woo commerce) if
+                  needed
+                </li>
+                <li>
+                  Databricks(SQL) - if there is a needed information that's need
+                  to trace
+                </li>
+                <li>Postman for API</li>
+                <li>Provide Support thru chats and emails</li>
+                <li>Tickecting System (Jira and Salesforce)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column text-column">
+              <h3>TECHNICAL SUPPORT ANALYST</h3>
+              <p>
+                Working on a BPO set up before as a technical support analyst
+                for three years and three months for credit card manufacturing
+                company that is base on USA
+              </p>
+
+              <ul class="task-list">
+                <li>Providing technical solutions to the client thru call</li>
+                <li>Create ticket with the said issue (zoho and jira)</li>
+                <li>Coordinate with other dept. with technical issue from technical analysis to resolution</li>
+                
+            </div>
+            <div class="column img-box" data-aos="flip-right" data-aos-duration="1000">
+              <img src="src/Images/BPO-call-center.jpg" alt="Animations" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="column img-box" data-aos="flip-right" data-aos-duration="1000">
+              <img src="src/Images/desktop-support-engineer.jpg" alt="Technical photo" />
+            </div>
+            <div class="column text-column">
+              <h3>IT ASSISTANT</h3>
+              <p>
+                Working as an IT assistant for my first job after I graduated to college 
+              </p>
+
+              <ul class="task-list">
+                <li>Responsible for Network, Hardware and Software trouble Shooting</li>
+                <li>POS Maintenance </li>
+                <li>POS trouble Shooting </li>
+                <li>
+                  CCTV Maintenance
+                </li>
+                <li>
+                  Hardware Installation
+                </li>
+                <li>Software/POS Installation</li>
+                <li>Doing Remote troubleshooting for POS and software</li>
+        
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Technical Support Service-->
+      <!--CONTACT ME-->
+      <section class="section-contact-me" data-aos="fade-right" data-aos-duration="1500" id="Contact">
+        <div class="container contact">
+          <h1 class="certificates-title">Contact Me</h1>
+          <hr />
+
+          <div class="contact-wrapper">
+            <form class="contact-form" name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea name="message" rows="6" placeholder="Your Message">
+              </textarea>
+
+              <button type="submit" class="btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </section>
+      <div class="btnUp">
+        <i class="fa-solid fa-arrow-up" id="up"></i>
+      </div>
+      <!--END CONTACT ME-->
+    </main>
+    <footer class="footer" data-aos="zoom-in" data-aos-duration="1500">
+      <div class="footer-container">
+        <div class="upper-footer">
+          <div class="upper-footer-flex">
+            <h3 class="footer-description">My Contact</h3>
+            <div class="info-wrapper">
+              <i
+                class="fa-sharp fa-solid fa-paper-plane"
+                aria-hidden="true"
+              ></i>
+              <h4 class="contact-info">daavviidd21@gmail.com</h4>
+            </div>
+            <div class="info-wrapper">
+              <i class="fa-solid fa-mobile-screen" aria-hidden="true"></i>
+              <h4 class="contact-info">09953458131</h4>
+            </div>
+          </div>
+          <div class="upper-footer-flex">
+            <h3 class="footer-description">My Socials</h3>
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/daavviidd21/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="https://instagram.com/daveedavidd?"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://x.com/davedavid2021?"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-square-twitter"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/dave-merino-81bb59186/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="upper-footer-flex">
+            <h3 class="footer-description">Download CV</h3>
+            <a href="" download="" class="icon-flex">
+              <i class="fa-solid fa-download download-cv"></i
+            ></a>
+          </div>
+        </div>
+        <div class="lower-footer">
+          <p>Copyright © All right serve Dave Merino</p>
+        </div>
+      </div>
+    </footer>
+    <script src="src/CSSandJS/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
